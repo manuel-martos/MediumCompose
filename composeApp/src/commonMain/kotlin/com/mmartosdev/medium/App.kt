@@ -19,7 +19,7 @@ import org.jetbrains.compose.resources.stringResource
 import org.jetbrains.compose.resources.vectorResource
 
 @Composable
-internal fun App() = AppTheme {
+internal fun App(title: String?) = AppTheme {
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -28,7 +28,7 @@ internal fun App() = AppTheme {
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(
-            text = stringResource(Res.string.cyclone),
+            text = title ?: stringResource(Res.string.cyclone),
             fontFamily = FontFamily(Font(Res.font.IndieFlower_Regular)),
             style = MaterialTheme.typography.displayLarge
         )
