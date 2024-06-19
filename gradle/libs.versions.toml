@@ -2,9 +2,11 @@
 
 kotlin = "2.0.0"
 compose = "1.6.10"
+compottie = "1.1.2"
 
 [libraries]
 
+compottie = { module = "io.github.alexzhirkevich:compottie", version.ref = "compottie" }
 
 [plugins]
 
