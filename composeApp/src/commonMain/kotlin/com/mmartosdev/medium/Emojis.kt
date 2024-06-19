@@ -37,7 +37,7 @@ private enum class EmojiType {
 fun Emojis() {
     Row(
         modifier = Modifier
-            .fillMaxWidth(),
+            .fillMaxSize(),
         horizontalArrangement = spacedBy(16.dp, alignment = Alignment.CenterHorizontally),
         verticalAlignment = Alignment.CenterVertically,
     ) {
