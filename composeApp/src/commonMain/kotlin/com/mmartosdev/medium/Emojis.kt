@@ -39,6 +39,7 @@ fun Emojis() {
         modifier = Modifier
             .fillMaxWidth(),
         horizontalArrangement = spacedBy(16.dp, alignment = Alignment.CenterHorizontally),
+        verticalAlignment = Alignment.CenterVertically,
     ) {
         Emoji(EmojiType.EmojiHugFace, modifier = Modifier.size(100.dp))
         Emoji(EmojiType.EmojiPartyingFace, modifier = Modifier.size(100.dp))
