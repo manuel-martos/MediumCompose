@@ -41,10 +41,10 @@ fun Emojis() {
         horizontalArrangement = spacedBy(16.dp, alignment = Alignment.CenterHorizontally),
         verticalAlignment = Alignment.CenterVertically,
     ) {
-        Emoji(EmojiType.EmojiHugFace, modifier = Modifier.size(100.dp))
-        Emoji(EmojiType.EmojiPartyingFace, modifier = Modifier.size(100.dp))
-        Emoji(EmojiType.EmojiWink, modifier = Modifier.size(100.dp))
-        Emoji(EmojiType.EmojiWinkTongue, modifier = Modifier.size(100.dp))
+        Emoji(EmojiType.EmojiHugFace, modifier = Modifier.weight(1f))
+        Emoji(EmojiType.EmojiPartyingFace, modifier = Modifier.weight(1f))
+        Emoji(EmojiType.EmojiWink, modifier = Modifier.weight(1f))
+        Emoji(EmojiType.EmojiWinkTongue, modifier = Modifier.weight(1f))
     }
 }
 
