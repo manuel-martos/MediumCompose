@@ -1,6 +1,7 @@
 import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.window.CanvasBasedWindow
 import com.mmartosdev.medium.App
+import com.mmartosdev.medium.HelloWorld
 import kotlinx.browser.window
 import org.jetbrains.skiko.wasm.onWasmReady
 import org.w3c.dom.url.URLSearchParams
@@ -10,7 +11,11 @@ fun main() {
     onWasmReady {
         CanvasBasedWindow("MediumCompose") {
             val queryParams = URLSearchParams(window.location.search)
-            App(queryParams.get("title"))
+            when (queryParams.get("sample")) {
+                "hello_world" -> HelloWorld()
+                else -> App(queryParams.get("title"))
+            }
+
         }
     }
 }
