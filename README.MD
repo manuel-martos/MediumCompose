@@ -12,4 +12,8 @@ Run browser UI tests: `./gradlew :composeApp:jsBrowserTest`
 Run the browser application: `./gradlew :composeApp:wasmJsBrowserDevelopmentRun --continue`
 Run browser UI tests: `./gradlew :composeApp:wasmJsBrowserTest`
 
-https://manuel-martos.github.io/MediumCompose/?sample=emojis
+<table>
+    <tr>
+        <td>Foo</td>
+    </tr>
+</table>
